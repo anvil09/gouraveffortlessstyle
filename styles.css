@@ -148,3 +148,8 @@ header nav ul li a {
         width: 100%; /* 1 product per row on very small screens */
     }
 }
+.price {
+    font-size: 1.5em;
+    color: #FF6347; /* Example color, adjust to your design */
+    margin: 0.5em 0;
+}
