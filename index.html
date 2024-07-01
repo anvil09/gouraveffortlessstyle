@@ -3,10 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gourav Shipping Website</title>
+    <title>Effortless Style</title>
     <link rel="stylesheet" href="./styles.css">
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Effortless Style offers premium quality hoodies, T-shirts, shirts, and pants. Discover comfort without compromising on quality.">
+    <meta name="keywords" content="Effortless Style, hoodies, T-shirts, shirts, pants, premium clothing, quality fashion">
+    <!-- Social Media Meta Tags -->
+    <meta property="og:title" content="Effortless Style - Premium Quality Clothing">
+    <meta property="og:description" content="Explore our collection of hoodies, T-shirts, shirts, and pants made from premium materials.">
+    <meta property="og:image" content="https://m.media-amazon.com/images/I/61tczA0XYnL._SY741_.jpg">
+    <meta property="og:url" content="https://anvil09.github.io/gouraveffortlessstyle/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Effortless Style - Premium Quality Clothing">
+    <meta name="twitter:description" content="Explore our collection of hoodies, T-shirts, shirts, and pants made from premium materials.">
+    <meta name="twitter:image" content="https://m.media-amazon.com/images/I/61tczA0XYnL._SY741_.jpg">
+    <style>
+       
+        /* Slideshow Styles */
+        .slideshow-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            margin: 20px 0;
+        }
+
+        .mySlides img {
+            max-width: 500%;
+            height: auto;
+            display: block;
+        }
+    </style>
 </head>
-<body>
     <header>
         <nav>
             <ul>
@@ -24,6 +52,31 @@
             <p>Effortless Style believes comfort shouldn't compromise on quality. Our hoodies are crafted from premium materials that are soft, durable, and built to last. Discover the difference and experience true effortless style.</p>
         </div>
     </section>
+    <section id="new-products-slideshow">
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <a href="https://effortless-style-store.printify.me/product/9510879/unisex-jersey-short-sleeve-tee" target="_blank">
+                    <img src="https://i.postimg.cc/NfsbSwNX/1-product-banner.png" style="width: 100%">
+                </a>
+            </div>
+            <div class="mySlides fade">
+                <a href="https://effortless-style-store.printify.me/product/9510646/unisex-garment-dyed-t-shirt" target="_blank">
+                    <img src="https://i.postimg.cc/wTKYm2kM/product-2-banner.png" style="width:100%">
+                </a>
+            </div>
+            <div class="mySlides fade">
+                <a href="https://effortless-style-store.printify.me/product/9509925/unisex-jersey-short-sleeve-tee" target="_blank">
+                    <img src="https://i.postimg.cc/KctxQCjB/p-RODUCT-3-banner.png" style="width:100%">
+                </a>
+            </div>
+            <div class="mySlides fade">
+                <a href="https://effortless-style-store.printify.me/product/9510211/unisex-garment-dyed-t-shirt" target="_blank">
+                    <img src="https://i.postimg.cc/7YW4L4Wv/NEWEST-DESGIN.png" style="width:100%">
+                </a>
+            </div>
+        </div>
+    </section>
+    
 
     <!-- Product Categories Section -->
     <section id="categories">
@@ -342,5 +395,25 @@
             </div>
         </div>
     </section>
+    <footer>
+        <p>&copy; 2024 Effortless Style. All rights reserved.</p>
+    </footer>
+    <script>
+        let slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            slides[slideIndex-1].style.display = "block";  
+            setTimeout(showSlides, 4000); // Change image every 4 seconds
+        }
+        </script>
+        
 </body>
 </html>
